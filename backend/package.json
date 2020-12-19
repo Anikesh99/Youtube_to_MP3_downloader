@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
+    "dev": "nodemon index.js",
     "servers": "concurrently \"npm run dev\" \"cd ../frontend && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd ../frontend && npm run build"
