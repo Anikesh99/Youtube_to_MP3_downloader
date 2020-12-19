@@ -24,5 +24,10 @@
     "nodemon": "^2.0.6",
     "youtube-mp3-downloader": "^0.7.6",
     "ytdl-core": "^4.2.1"
+  },
+  "devDependencies": {
+      "babel-eslint": "^10.1.0",
+      "eslint-plugin-react-hooks": "^4.0.2",
+      "nodemon": "^2.0.4"
   }
 }
