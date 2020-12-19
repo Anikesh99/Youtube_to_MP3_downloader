@@ -14,12 +14,10 @@ app.use(cors())
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
-app.use(express.static(path.join(__dirname, '../build')))
+app.use(express.static('frontend/build'))
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build'))
-})
-app.listen(port, () => {
-    console.log('Server works!!! At port 4000')
 })
 
 app.post('/download', async function(req, res) {
@@ -42,6 +40,9 @@ app.post('/download', async function(req, res) {
         })
     } catch (e) {
         console.log(e)
-    }
-    
+    }  
+})
+
+app.listen(port, () => {
+    console.log('Server works!!! At port 4000')
 })
