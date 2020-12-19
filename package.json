@@ -22,7 +22,8 @@
     "fluent-ffmpeg": "^2.1.2",
     "mongoose": "^5.11.8",
     "youtube-mp3-downloader": "^0.7.6",
-    "ytdl-core": "^4.2.1"
+    "ytdl-core": "^4.2.1",
+    "react-scripts": "1.0.16"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
