@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
     "servers": "concurrently \"npm run dev\" \"cd frontend && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd frontend && npm run build"
+    "build": "cd frontend && npm run build",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "engines": {
+    "node": "14.8.0"
   },
   "keywords": [],
   "author": "Anikesh",

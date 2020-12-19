@@ -7,6 +7,8 @@ const readline = require('readline')
 const ffmpeg = require('fluent-ffmpeg')
 const YoutubeMP3Downloader = require('youtube-mp3-downloader')
 
+const port = process.env.PORT || 4000;
+
 app.use(cors({
     origin:'http://localhost:3000',
     credentials:true
@@ -15,7 +17,7 @@ app.use(cors({
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.listen(4000, () => {
+app.listen(port, () => {
     console.log('Server works!!! At port 4000')
 })
 
