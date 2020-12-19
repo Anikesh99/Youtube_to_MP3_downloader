@@ -32,7 +32,7 @@ class Form extends React.Component {
         })
         const {url} = this.state
         const URL = {url}
-        axios.post(`http://localhost:4000/download`, URL)
+        axios.post(`/download`, URL)
             .then((response) => {
                 console.log(response.data)
                 this.setState({

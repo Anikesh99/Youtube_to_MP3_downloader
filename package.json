@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node server.js --ignore frontend",
+    "dev": "nodemon server.js --ignore frontend",
     "servers": "concurrently \"npm run dev\" \"cd frontend && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd frontend && npm run build",
