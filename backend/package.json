@@ -7,7 +7,8 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "servers": "concurrently \"npm run dev\" \"cd ../frontend && npm run start\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd ../frontend && npm run build"
   },
   "keywords": [],
   "author": "Anikesh",
